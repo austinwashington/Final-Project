@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Reach - Home</title>
+    <meta name="description" content="Route Reach helps you plan smarter routes and reach your destination faster.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-gated">
+        <img class="logo" src="Routereachlogo.png" alt="Route Reach logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="plan-trip.html">Plan a Trip</a></li>
+        </ul>
+    </nav>
+  
+ 
+<div id="mainContent">
+  <input id="nameinput" type="text" placeholder="Enter your name" />
+  <button id="greetbutton">Show</button>
+</div>
+
+<div id="fullscreenPopup" class="fullscreen-popup">
+  <h1 id="welcomeMessage"></h1>
+  <p class="popup-sub">Let's find your route.</p>
+</div>
+
+<div id="paragraphSection" class="paragraph-section" style="display:none;">
+  <p>Thanks for stopping by. Scroll down to see more.</p>
+</div>
+
+<div id="rectContainer" class="rect-container" style="display:none;">
+  <div class="stack-wrap">
+    <div class="stack-sticky">
+      <div class="rect" id="rect1">Rectangle 1</div>
+      <div class="rect" id="rect2">Rectangle 2</div>
+      <div class="rect" id="rect3">Rectangle 3</div>
+    </div>
+  </div>
+
+  <button id="showStatsBtn">Show stats</button>
+  <div id="statsInfo" class="stat-info">
+    <img class="stat" src="stats.png" alt="Route Reach usage statistics">
+    <p>Info about stats here!</p>
+  </div>
+  <button id="donate">Donate</button>
+</div>
+
+    <script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Reach - Plan a Trip</title>
+    <meta name="description" content="Get step-by-step bus directions, including transfers and times, from one place to another.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="Routereachlogo.png" alt="Route Reach logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="plan-trip.html">Plan a Trip</a></li>
+        </ul>
+    </nav>
+
+    <div class="finder-wrap">
+        <h1>Plan a bus trip</h1>
+        <p class="finder-subnote">
+            Enter a starting point and a destination to get full step-by-step transit
+            directions — which lines to take, where to transfer, and estimated times.
+        </p>
+
+        <div class="finder-controls">
+            <input id="tripFrom" type="text" placeholder="From (address or place)" />
+            <input id="tripTo" type="text" placeholder="To (address or place)" />
+            <button id="tripGoBtn">Get directions</button>
+        </div>
+
+        <p id="tripPlannerStatus" class="finder-status"></p>
+
+        <div id="tripMap" class="bus-map"></div>
+
+        <ol id="tripSteps" class="trip-steps"></ol>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqdLHd8Sor4Hp16PsioKwJVFmgvjYlSDc&callback=initMap&libraries=places" async defer></script>
+    <script src="plan-trip.js"></script>
+</body>
+</html>
