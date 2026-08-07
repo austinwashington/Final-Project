@@ -7,6 +7,7 @@ let paragraphSection = document.getElementById("paragraphSection");
 let rectContainer = document.getElementById("rectContainer");
 let rects = document.querySelectorAll(".rect");
 let  donate= document.getElementById("donate");
+let paragraph = document.getElementById("paragraphSection")
 
 // ---- Nav stays hidden until the "Show" button is pressed ----
 const gatedNav = document.querySelector("nav.nav-gated");
@@ -14,6 +15,7 @@ const gatedNav = document.querySelector("nav.nav-gated");
 function welcome() {
   let firstName = nameInput.value;
 
+   paragraph.innerHTML = `<p>Hello ${nameInput.value}, and welcome to Route Reach. This website was inspired by my personal desire to have freedom as a teen and it aims to solve problems for both the child and authoritative figure.</p>`
   // reveal the nav now that the button has been pressed
   gatedNav?.classList.add("nav-visible");
 
